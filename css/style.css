@@ -1,0 +1,222 @@
+
+:root{
+    --font-family: 'Montserrat', sans-serif;
+    --font-size: 16px;
+    --font-weight: 300;
+
+    /* colores
+    https://htmlcolorcodes.com/es/
+    https://colorhunt.co/palettes/cold
+    */
+    --color-white: #E8E8E8;
+    --color-black: #353737;
+
+    --color-primario: #3CB1DD ;
+    --color-secundario: #7895CB ;
+    --color-terciario: #C9EEFF ;
+
+    --color-headerBlue:#4d77ec;
+    --color-headerBG: #b6b2b298;
+    
+
+    --size-header: 75px;
+    --size-nav-item: 60px;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0;
+  }
+
+html {
+    scroll-behavior: smooth;
+    }
+
+body {
+    font-family: var(--font-family);
+    font-size: var(--font-size);
+    font-weight: var(--font-weight);
+    background-color: var(--color-white);
+    color: var(--color-color);
+  }
+
+
+/* #region GENERAL */ 
+
+.fx-row {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .fx-column {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .fx-content-space-between {
+    justify-content: space-between;
+  }
+  
+  .fx-content-center {
+    justify-content: center;
+  }
+  
+  .fx-align-items-center {
+    align-items: center;
+  }
+  
+  .text-small {
+    font-size: 0.85rem;
+  }
+
+/* #endregion */
+
+/* #region HEADER */
+header {
+  position: fixed;
+  background: var(--color-headerBlue);
+  width: 100%;
+  height: var(--size-header);
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.10);
+  z-index: 1;
+}
+#logo,
+#contacto {
+  height: var(--size-nav-item);
+  width: var(--size-nav-item);
+  margin: 10px;
+}
+
+#logo,
+#contacto > img {
+  width: auto;
+  padding: 5px;
+  
+}
+
+nav {
+  height: var(--size-nav-item);
+  font-size: 1.25rem;
+}
+
+nav ul {
+  list-style: none;
+  margin-bottom: 0;
+}
+
+nav li {
+  padding: 0.75rem 2rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--color-white);
+  font-weight: 600;
+}
+
+
+nav li:hover,
+#contacto:hover {
+  background-color: var(--color-headerBG);
+  border-radius: 8px;
+}
+nav li:hover,
+#logo:hover {
+  background-color: var(--color-headerBG);
+  border-radius: 8px;
+}
+/* #endregion */
+
+/* #region SECTION */
+
+section {
+  scroll-margin-top: var(--size-header);
+  padding: calc(var(--size-header) / 2) var(--size-header);
+}
+
+section > h1 {
+  color: var(--color-primario);
+  text-transform: uppercase;
+  font-size: 2rem;
+  border-bottom: 5px solid var(--color-primario);
+  margin-bottom: 2rem;
+}
+
+/* #endregion */
+
+
+/* #region HOME */
+#home {
+  height: 100vh;
+  background: url("../img/homeIMG/unison.jpg") no-repeat center center fixed;
+  background-size: cover;
+  color: var(--color-white);
+}
+
+.home-banner {
+  gap: 1rem;
+  background-color: var(--color-primario);
+  opacity: 0.9;
+  padding: 3rem;
+}
+
+.home-banner > h1 {
+  text-transform: uppercase;
+  font-size: 2rem;
+}
+
+.home-banner > h3 {
+  font-size: 1.5rem;
+}
+/* #endregion*/
+
+/* #region ESCUELA */
+
+/* #endregion*/
+
+/* #region HABILIDADES */
+
+/* #endregion*/
+
+/* #region PROYECTOS */
+
+/* #endregion*/
+
+/* #region FOOTER */
+footer {
+  background: var(--color-secundario);
+  color: var(--color-white);
+  text-align: center;
+  padding: 6rem 3rem;
+}
+
+.contacto-container {
+  width: 600px;
+  max-width: 100%;
+}
+
+.contacto-container h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+}
+
+input,
+textarea {
+  margin-bottom: 1rem;
+  padding: 8px;
+  border: 1px solid var(--color-white);
+  border-radius: 3px;
+}
+/* #endregion*/
+
+/* #region RESPONSIVE */
+
+/* #endregion*/
+
+/* #region x */
+
+/* #endregion*/
+

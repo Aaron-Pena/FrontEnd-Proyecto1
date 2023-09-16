@@ -7,14 +7,86 @@
         <title>Soy Aaron</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="">
+
+        <link rel="stylesheet" type="text/css" href="./css/style.css">
+        <script src="./js/main.js" defer></script>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Rajdhani&display=swap" rel="stylesheet">
+        
     </head>
     <body>
+            <header class="fx-row fx-content-space-between fx-align-items-center">
+                
+                <a id="logo" class="fx-row" onclick="goHome()">
+                    <img src="./img/nav/home.png" title="Home">
+                  </a>
 
-        
-        <section></section>
+                  <nav class="fx-row xs-hide fx-align-items-center">
+                    
+                    <ul class="fx-row fx-content-space-between fx-align-items-center">
+                      <li><a href="#escuela">About</a></li>
+                      <li><a href="#habilidades">Habilities</a></li>
+                      <li><a href="#proyectos">Proyects</a></li>
+                    
+                    </ul>
+                  
+                </nav>
+                  <a id="contacto" href="#footer" class="fx-row">
+                    <img src="./img/nav/contacto.png" title="Contactame">
+                 
+                </a>
+            </header>
 
 
+                <main>
+                    <Section id="home" class="fx-column fx-content-center fx-align-items-center"><!--Quien soy-->
+                        <div class="home-banner fx-column fx-content-center fx-align-items-center">
+                            <h1>Hola, soy Aaron</h1>
+                            <h3>Uwu</h3>
+                            <img src="./img/homeIMG/yo.jpg" alt="yo">
+                        </div>
+                    </Section> 
 
+                    <section id="escuela"><!--Que estudio-->
+                        <h1>Donde estudio..</h1>
+                        <div class="escuela-container fx-row fx-xs-column fx-content-space-between fx-align-items-center">
+                            <div class="escuela-info">
+                                <h3>Me encuentro estudiando mi 9vo semestre en la UNISON</h3>
+                                <p>Hago esto esto y aquello</p>
+                                <br>
+                                <p>Tambien he hecho </p>
+                            </div>
+                            <img src="./img/escuela/unison.jpg" alt="Universidad de Sonora">
+                        </div>
+                    </section> 
+
+                    <section id="habilidades"></section> <!--Lenguajes programacion e idiomas-->
+                    <section id="proyectos"></section> <!--Que hago ahorita-->
+                    
+                </main>
+
+            <footer id="footer">
+
+                <div class="contacto-container">
+
+                    <h2>Contacto</h2>
+              
+                    <form id="contacto-form" class="fx-column">
+              
+                      <input type="text" id="nombre" placeholder="Nombre" required>
+              
+                      <input type="email" id="email" placeholder="Email" required>
+              
+                      <textarea id="mensaje" placeholder="Mensaje" required></textarea>
+              
+                      <button type="submit" class="button-action">Enviar</button>
+              
+                    </form>
+              
+                  </div>
+            </footer>
+            
     </body>
 </html>
