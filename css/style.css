@@ -4,20 +4,17 @@
     --font-size: 16px;
     --font-weight: 300;
 
-    /* colores
-    https://htmlcolorcodes.com/es/
-    https://colorhunt.co/palettes/cold
-    */
     --color-white: #E8E8E8;
     --color-black: #353737;
 
-    --color-primario: #3CB1DD ;
+    --color-primario: #4b79f7dc ;
     --color-secundario: #7895CB ;
-    --color-terciario: #C9EEFF ;
+    --color-terciario: #5c5f61 ;
 
     --color-headerBlue:#4d77ec;
     --color-headerBG: #b6b2b298;
-    
+    --color-Habilidades:#9d9fa059;
+  
 
     --size-header: 75px;
     --size-nav-item: 60px;
@@ -69,6 +66,38 @@ body {
   
   .text-small {
     font-size: 0.85rem;
+  }
+
+  button.button-action,
+  a.button-link {
+    cursor: pointer;
+    background-color: var(--color-primario);
+    color: var(--color-white);
+    font-size: 1.25rem;
+    line-height: 1.25rem;
+    width: 100%;
+    height: 42px;
+    padding: 0 2rem;
+    border: none;
+    border-radius: 21px;
+    transition: color 0.5s;
+  }
+  
+  a.button-link {
+    display: inline;
+    padding: 10px 20px;
+    text-decoration: none;
+    text-align: center;
+  }
+  
+  button.button-action:hover,
+  a.button-link:hover {
+    background-color: var(--color-secundario);
+  }
+
+  button.button-action:active {
+    color: var(--color-black);
+    background-color: var(--color-Habilidades);
   }
 
 /* #endregion */
@@ -143,6 +172,10 @@ section > h1 {
   border-bottom: 5px solid var(--color-primario);
   margin-bottom: 2rem;
 }
+section#habilidades{
+  background-color: var(--color-Habilidades);
+  
+}
 
 /* #endregion */
 
@@ -150,7 +183,7 @@ section > h1 {
 /* #region HOME */
 #home {
   height: 100vh;
-  background: url("../img/homeIMG/unison.jpg") no-repeat center center fixed;
+  background: url("../img/homeIMG/hmo.jpg") no-repeat center center fixed;
   background-size: cover;
   color: var(--color-white);
 }
@@ -158,7 +191,6 @@ section > h1 {
 .home-banner {
   gap: 1rem;
   background-color: var(--color-primario);
-  opacity: 0.9;
   padding: 3rem;
 }
 
@@ -170,31 +202,135 @@ section > h1 {
 .home-banner > h3 {
   font-size: 1.5rem;
 }
+.home-banner > p {
+  font-size: 1.25rem;
+}
+.home-banner img{
+  width: 300px;
+  height: 300px;
+}
+
 /* #endregion*/
 
-/* #region ESCUELA */
+/* #region ABOUT */
+.about-container {
+  gap: 10px;
+  padding: 15px;
+  background-color: var(--color-primario);
+  box-shadow: 0px 7px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  
+}
+
+.about-info {
+  padding: 10px;
+  background-color: var(--color-white);
+  border-radius: 8px;
+}
+.about-info img{
+  width: auto;
+  height: 300px;
+}
+
+.about-photo{
+  width: 850px;
+  height: auto;
+  padding: 8px;
+  background-color: var(--color-white);
+  border-radius: 8px;
+}
+
 
 /* #endregion*/
 
 /* #region HABILIDADES */
 
+.card {
+  position: relative;
+  overflow: hidden;
+  padding: 20px;
+  margin: 20px;
+  background: var(--color-white);
+  box-shadow: 10px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  text-align: center;
+}
+
+.card h3{
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  font-size: 1.25rem;
+}
+
+.card ul{
+padding: 10px;
+}
+
+.card li{
+margin: 10px;
+}
+
+.card p {
+  margin-bottom: 1rem;
+}
+
+
 /* #endregion*/
 
 /* #region PROYECTOS */
+
+.proyectos-container h2{
+background-color: var(--color-white);
+border-radius: 8px 8px 0px 0px;
+margin: 10px;
+}
+
+.proyectos-container p{
+  padding: 20px;
+  font-size: 20px;
+  margin: 10px;
+  background-color: var(--color-white);
+  border-radius: 0px 0px 8px 8px;
+}
+
+.proyectos-container img{
+background-color: var(--color-headerBG);
+padding: 10px;
+scale: 70%;
+border-radius: 8px;
+}
+
+.proyectos-box{
+  position: relative;
+  overflow: hidden;
+  padding: 20px;
+  margin: 20px;
+  background: var(--color-primario);
+  box-shadow: 7px 7px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  text-align: center;
+}
 
 /* #endregion*/
 
 /* #region FOOTER */
 footer {
   background: var(--color-secundario);
-  color: var(--color-white);
+  color: var(--color-black);
   text-align: center;
   padding: 6rem 3rem;
+  
+}
+footer p{
+  font-size: 25px;
 }
 
 .contacto-container {
   width: 600px;
   max-width: 100%;
+  padding: 25px;
+  background-color: var(--color-white);
+  border-radius: 8px;
 }
 
 .contacto-container h2 {
@@ -208,11 +344,160 @@ textarea {
   margin-bottom: 1rem;
   padding: 8px;
   border: 1px solid var(--color-white);
-  border-radius: 3px;
+  border-radius: 6px;
+  font-size: 20px;
+
 }
 /* #endregion*/
 
+/* #region SOCIALES */
+.redes-sociales-container {
+  gap: 1.5rem;
+  padding: 3rem 2rem;
+  margin: 10px;
+  border-radius: 8px;
+  background-color: var(--color-white);
+}
+
+.fa-brands {
+  font-size: 2rem;
+  color: var(--color-primario);
+}
+
+.fa-brands:hover {
+  color: var(--color-terciario);
+}
+
+.fa-brands:active {
+  color: var(--color-black);
+}
+
+/* #endregion */
+
 /* #region RESPONSIVE */
+
+
+
+@media screen and (max-width: 1440px) {
+
+  body {
+    font-size: 14px;
+  }
+
+  section {
+    padding: 40px 70px;
+  }
+
+  .proyectos-container{
+    margin: 5px;
+    }
+
+  .card {
+    padding: 1.5rem;
+    margin: 1.5rem;
+  }
+  .about-info{
+    font-size: 17px;
+  }
+  .about-info img{
+    width: 170px;
+    height: auto;
+  }
+
+  .about-photo{
+  width: 450px;
+  height: auto;
+  }
+  .proyectos-box img{
+    height: auto;
+    width: 600px;
+    
+  }
+}
+
+@media screen and (max-width: 1024px) {
+
+  body {
+    font-size: 13px;
+  }
+
+  section {
+    padding: 40px 50px;
+  }
+
+  section > h1 {
+    font-size: 1.5rem;
+  }
+
+  nav {
+    font-size: 1.125rem;
+  }
+
+  .about-info{
+    font-size: 17px;
+  }
+  .about-info img{
+    width: 200px;
+    height: auto;
+  }
+
+  .about-photo{
+  width: 400px;
+  height: auto;
+  }
+
+  .card {
+    padding: 0.9rem;
+    margin: 0.9rem;
+    font-size: 17px;
+  }
+
+  .proyectos-box img{
+    height: auto;
+    width: 350px;
+    
+  }
+ 
+}
+
+
+@media screen and (max-width: 768px) {
+  body {
+    font-size: 12px;
+  }
+
+  section {
+    padding: 40px 45px;
+  }
+
+  .xs-hide {
+    display: none;
+  }
+
+  .fx-xs-column {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .card {
+    padding: 40px;
+    margin: 20px 0;
+  }
+  .about-info img{
+    width: 100px;
+    height: auto;
+  }
+
+  .about-photo{
+  width: 300px;
+  height: auto;
+  }
+ 
+
+  
+
+}
+
 
 /* #endregion*/
 

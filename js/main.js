@@ -17,9 +17,11 @@ function goHome() {
       const email = document.getElementById("email").value;
       const mensaje = document.getElementById("mensaje").value;
   
-      alert('Gracias por contactarnos - Nombre: ' + nombre + '- Email: ' + email + '- Mensaje: ' + mensaje);
+      alert('Pronto le devuelvo el correo \n- Nombre: ' + nombre + '\n- Email: ' + email + '\n- Mensaje: ' + mensaje);
   
       contactoForm.reset();
     });
+
+
 
   }); //Final

@@ -11,10 +11,15 @@
         <link rel="stylesheet" type="text/css" href="./css/style.css">
         <script src="./js/main.js" defer></script>
 
+        <link rel="icon" type="image/x-icon" href="./img/favicon.ico">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Rajdhani&display=swap" rel="stylesheet">
+
         
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
     </head>
     <body>
             <header class="fx-row fx-content-space-between fx-align-items-center">
@@ -26,9 +31,9 @@
                   <nav class="fx-row xs-hide fx-align-items-center">
                     
                     <ul class="fx-row fx-content-space-between fx-align-items-center">
-                      <li><a href="#escuela">About</a></li>
-                      <li><a href="#habilidades">Habilities</a></li>
-                      <li><a href="#proyectos">Proyects</a></li>
+                      <li><a href="#about">Acerca de</a></li>
+                      <li><a href="#habilidades">Habilidades</a></li>
+                      <li><a href="#proyectos">Proyectos</a></li>
                     
                     </ul>
                   
@@ -43,31 +48,113 @@
                 <main>
                     <Section id="home" class="fx-column fx-content-center fx-align-items-center"><!--Quien soy-->
                         <div class="home-banner fx-column fx-content-center fx-align-items-center">
-                            <h1>Hola, soy Aaron</h1>
-                            <h3>Uwu</h3>
-                            <img src="./img/homeIMG/yo.jpg" alt="yo">
+                            <h1>Hola, soy Aaron Peña</h1>
+                            <h3>Bienvenido a mi perfil.</h3>
+                            <p>Aqui encontraras toda la informacion relevante sobre mi persona.</p>
+                            <img class="fx-content-center fx-align-items-center" src="./img/homeIMG/yo.jpg" alt="yo">
                         </div>
                     </Section> 
 
-                    <section id="escuela"><!--Que estudio-->
-                        <h1>Donde estudio..</h1>
-                        <div class="escuela-container fx-row fx-xs-column fx-content-space-between fx-align-items-center">
-                            <div class="escuela-info">
+                    <section id="about"><!--Que estudio-->
+                        <h1>Quien soy...</h1>
+                        <div class="about-container fx-row fx-xs-column fx-content-space-between fx-align-items-center">
+                            <div class="about-info ">
                                 <h3>Me encuentro estudiando mi 9vo semestre en la UNISON</h3>
-                                <p>Hago esto esto y aquello</p>
                                 <br>
-                                <p>Tambien he hecho </p>
+                                <p>Actualmente ando estudiando la carrera de Ingeniera en Sistemas de Informacion</p>
+                                <br>
+                                <p>Soy un desarrollador casual que le gusta comer una cantidad exagerda de galletas mientras programa.</p>
+                                <br>
+                                <p>Tengo un gato que se llama Odin y me acompaña a todos lados.</p>
+
+                                <br>
+                                <img class="" src="./img/homeIMG/gato.jpg" alt="Odin">
                             </div>
-                            <img src="./img/escuela/unison.jpg" alt="Universidad de Sonora">
+                            <img class="about-photo" src="./img/homeIMG/unison.jpg" alt="Universidad de Sonora">
                         </div>
                     </section> 
 
-                    <section id="habilidades"></section> <!--Lenguajes programacion e idiomas-->
-                    <section id="proyectos"></section> <!--Que hago ahorita-->
+                    <section id="habilidades"><!--Lenguajes programacion e idiomas-->
+                        <h1>Lo que se hacer...</h1>
+                        <div class="card-container fx-row fx-xs-column fx-content-center">
+                            
+                            <div class="card">
+                                <h3>Estoy aprendiendo...</h3>
+                                <ul>
+                                    <li>Desarrollo Movil
+                                        <i class="fa-brands fa-android"></i>
+                                    </li>
+                                    <li>Front End
+                                        <i class="fa-brands fa-html5"></i>
+                                        <i class="fa-brands fa-css3"></i>
+                                        <i class="fa-brands fa-js"></i>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="card" >
+                                <h3>Tengo experiencia desarrollando en...</h3>
+                                <ul>
+                                    <li>Java
+                                        <i class="fa-brands fa-java"></i>
+                                    </li>
+                                    <li>Python
+                                        <i class="fa-brands fa-python"></i>
+                                    </li>
+                                    <li>Unity
+                                        <i class="fa-brands fa-unity"></i>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="card">
+                                <h3>Puedo hablar...</h3>
+                                <ul>
+                                    <li>Ingles 
+                                        <p>Nivel: C1</p>
+                                    </li>
+                                </ul>
+                            </div>
+
+                        </div>
+
+                    </section> 
+
+                    <section id="proyectos"><!--Que hago ahorita-->
+                        <h1>He participado en...</h1>
+                        <div class="proyectos-container">
+
+                            <div class="proyectos-box">
+                                <img src="./img/proyectosIMG/Edalmarc.jpeg" alt="Edalmarc">
+                                <div class="proyectos-content">
+                                    <h2>App para Edalmarc</h2>
+                                    <p>Actualmente me encuentro desarrollando para esta empresa como parte de mis practicas profesionales.</p>
+                                </div>
+                            </div>
+
+                            <div class="proyectos-box">
+                                <img src="./img/proyectosIMG/curso.png" alt="curso CSTI">
+                                <div class="proyectos-content">
+                                    <h2>Configuracion y administracion de servidores con Windows</h2>
+                                    <p>Participe en un curso dentro de la Universidad de Sonora donde aprendimo manejar servidores en Windows.</p>
+                                </div>
+                            </div>
+
+                            <div class="proyectos-box">
+                                <img src="./img/proyectosIMG/ServicioSocial.jpg" alt="Servicio Social">
+                                <div class="proyectos-content">
+                                    <h2>App para servicio social</h2>
+                                    <p>Como parte de mi servicio social, fui el encargado en desarrollar una plaicion estilo juego para medir el comportamiento humano.</p>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </section> 
                     
                 </main>
 
-            <footer id="footer">
+            <footer id="footer" class="fx-column fx-content-center fx-align-items-center">
 
                 <div class="contacto-container">
 
@@ -86,7 +173,18 @@
                     </form>
               
                   </div>
+
+                  <div class="redes-sociales-container fx-row">
+                    <a href="https://wa.me//+526623299330" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+                    <a href="https://www.linkedin.com/in/aaron-pc/" target="_blank"><i class="fa-brands fa-linkedin"></i>
+                    <a href="https://github.com/Aaron-Pena" target="_blank"><i class="fa-brands fa-github"></i></a>
+              
+                  </div>
+                  <p>Proyecto #1 ISI &copy; 2023</p>
             </footer>
+
+
+
             
     </body>
 </html>
